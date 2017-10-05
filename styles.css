@@ -4,3 +4,10 @@
    font-family: 'Varela Round', sans-serif;
    font-weight: 700;
 }
+.navbar-inverse {
+  color: lightgrey;
+}
+/* Body
+------------------------------*/
+body {
+}
