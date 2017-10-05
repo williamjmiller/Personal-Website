@@ -1,0 +1,19 @@
+/* Heading
+------------------------------*/
+.navbar-header .navbar-brand {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  font-size: 35px;
+}
+#my-navbar {
+  background: #2E4057;
+  padding: 15px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #E6EBE0;
+}
+/* Body
+------------------------------*/
+body {
+}
