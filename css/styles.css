@@ -30,5 +30,11 @@
 }
 /* Body
 ------------------------------*/
-body {
+.container>h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 40px;
+}
+#header-container {
+  padding-top: 20px;
+  margin-bottom: -20px;
 }
