@@ -27,14 +27,19 @@
                   <span class = "icon-bar"></span>
                 </button>
 
-                <a class = "navbar-brand" href = "#">WM</a>
+                <a class = "navbar-brand" href = "siteindex.html">WM</a>
               </div>
               <div class = "collapse navbar-collapse" id = "myNavbar">
                 <ul class = "nav navbar-nav navbar-right">
                   <li><a href = "https://github.com/williamjmiller" target="_blank">Projects</a></li>
                   <li><a href = "#Resume">Resume</a></li>
                   <li><a href = "#Contact">Contact Me</a></li>
-                  <a><button class="btn btn-info navbar-btn" href = "">Blog</button></a>
+                  <input type = "button" class="btn btn-info navbar-btn" value = "Blog" onclick = "relocate_blog()" id = "blog-button">
+                    <script>
+                    function relocate_blog() {
+                      location.href = "blog.html ";
+                    }
+                    </script>
                 </ul>
               </div>
             </div><!--End Container -->

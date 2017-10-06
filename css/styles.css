@@ -1,10 +1,17 @@
 /* Heading
 ------------------------------*/
 .navbar-header .navbar-brand {
-  color: white;
+  color: #73D2DE;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   font-family: 'Pacifico', cursive;
   font-weight: 700;
   font-size: 38px;
+}
+#lower-brand {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 15px;
+  padding-top: 25px;
 }
 #my-navbar {
   background: #2E4057;
@@ -20,13 +27,13 @@
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #73D2DE;
 }
-.navbar-inverse .navbar-nav>a>button {
-  color: #E6EBE0;
+#blog-button {
+  color:  white;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* Body
 ------------------------------*/
@@ -35,6 +42,6 @@
   font-size: 40px;
 }
 #header-container {
-  padding-top: 20px;
-  margin-bottom: -20px;
+  padding-top: 2em;
+  margin-bottom: -3%;
 }
