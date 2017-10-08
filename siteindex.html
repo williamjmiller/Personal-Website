@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
@@ -33,7 +34,7 @@
                 <ul class = "nav navbar-nav navbar-right">
                   <li><a href = "https://github.com/williamjmiller" target="_blank">Projects</a></li>
                   <li><a href = "documents/myresume.pdf" target = "_blank">Resume</a></li>
-                  <li><a href = "#Contact">Contact Me</a></li>
+                  <li><a href = "#bottom">Contact Me</a></li>
                   <input type = "button" class="btn btn-info navbar-btn" value = "Blog" onclick = "relocate_blog()" id = "blog-button">
                     <script>
                     function relocate_blog() {
@@ -48,20 +49,31 @@
           <!-- Jumbotron -->
           <div class = "jumbotron text-left">
             <div class = "container" id = "header-container">
-              <h1></h1>
+              <h1><b>My name is Will Miller ...</b></h1>
+              <h2>I am a computer science and statistics student at UW-Madison,
+                  a self-taught programmer, a creative thinker, an innovator, and a reliable individual.
+              </h2>
+              <h2><b>My interests include:</b></h2>
+              <ul class = "my-list">
+                <li>Applying mathematical and statistical methods to computer science, data analytics, and machine learning</li>
+                <li>Spending time with my wonderful friends, family, and dog</li>
+                <li>Adventuring and traveling, cooking, exercising, enjoying a cup of coffee, and playing pool</li>
+                <li>Tinkering with electronics, automobiles, and basically anything DIY</li>
+              </ul>
+              <h2><b>Check me out!!</b></h2>
             </div>
           </div>
           <!-- End Jumbotron -->
-          <div class="container">
+<div class="container" id = "my-photos">
 	<div class="row">
-		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage1.jpg" /></div>
+		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/delicatearch.jpg" /></div>
         <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage3.jpg" /></div>
-        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage8.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/inthelib.jpg" /></div>
         <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage7.jpg" /></div>
-    	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage6.jpg" /></div>
-        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage10.jpg" /></div>
-	    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage5.jpg" /></div>
-        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage9.jpg" /></div>
+    	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/amesandme.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage5.jpg" /></div>
+	    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/fbimage10.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="images/cliffsmoher.jpg" /></div>
     </div>
 </div>
 
@@ -70,4 +82,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       </body>
+
+      <footer>
+        <div class = "text-center" id = "contact-info">
+          <!-- Add font awesome icons -->
+          <a href = "http://facebook.com" target = "_blank" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+          <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+          <a class="icons-sm so-ic"><i class="fa fa-stack-overflow"> </i></a>
+          <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+          <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+          <a href = "mailto:williamjoemiller@gmail.com" class="icons-sm email-ic"><i class="fa fa-envelope-o"> </i></a>
+            <p><small class = "copyright" id = "bottom">William Miller 2017 ©</small></p>
+        </div>
+  </footer>
 </html>

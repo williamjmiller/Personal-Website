@@ -58,16 +58,48 @@ img:hover {
 body {
   background-color: #CEE7E6;
 }
+#my-photos {
+  margin-top: 20px;
+}
 .container>h1 {
   font-family: 'Varela Round', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
+}
+.container>h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
 }
 #header-container {
   float: inherit;
-  margin-top: 20px;
-  margin-bottom: -20px;
+  margin-top: 30px;
+  margin-bottom: -40px;
 }
-#blog-title {
-  font-family: 'Varela Round', sans-serif;
-  margin-top: 0 auto;
+#blog-header {
+  float: inherit;
+  margin-top: 30px;
+  margin-bottom: -40px;
 }
+/* Footer
+------------------------------*/
+.footer{
+  display: block;
+}
+#contact-info {
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 0 auto;
+}
+/* Style all font awesome icons */
+.fa {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.5;
