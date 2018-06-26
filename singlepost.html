@@ -20,7 +20,6 @@
     </head>
       <body>
 <!-- Navbar -->
-<!-- FIXME: NavBar still not working,  need to fix before launch -->
           <nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation" id = "my-navbar">
             <div class = "container">
               <div class = "navbar-header">
@@ -55,81 +54,34 @@
               <h1><b></b></h1>
             </div>
           </div>
-          <div class="container">
-    <div class="row">
-        <div class="col-md-8">
+          <div class="well">
 
-            <!-- heading -->
+        <h4>Leave a comment</h4>
 
+        <form role="form" class="clearfix" id = "comment-form">
 
-            <!-- list of posts -->
-            <article>
-                <h2><a href="singlepost.html" class = "blog-title">From Engineering to Computer Science</a></h2>
+            <div class="col-md-6 form-group">
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
 
-                <div class="row">
-                    <div class="group1 col-sm-6 col-md-6">
-                        <span class="glyphicon glyphicon-folder-open"></span>
-                          <span class="glyphicon glyphicon-bookmark"></span>
-                    </div>
-                    <div class="group2 col-sm-6 col-md-6">
-                        <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">Comments</a>
-                          <span class="glyphicon glyphicon-time" id = "post-time"></span> October 9, 2017 9:00 PM
-                    </div>
-                </div>
+            <div class="col-md-6 form-group">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
 
-                <hr>
-                <p class="lead"></p>
+            <div class="col-md-12 form-group">
+                <label class="sr-only" for="email">Comment</label>
+                <textarea class="form-control" id="comment" placeholder="Comment"></textarea>
+            </div>
 
-                <p>...</p>
-                </p>
-                <hr>
-            </article>
-            <article>
-              <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12 form-group text-right">
+                <button type="submit" class="btn btn-info" id = "submit">Submit</button>
+            </div>
 
-                <!-- heading -->
-                <!-- list of posts -->
-                <article>
-                    <h2><a href="singlepost.html" class = "blog-title">Getting started with Python and NumPy</a></h2>
-
-                    <div class="row">
-                        <div class="group1 col-sm-6 col-md-6">
-                            <span class="glyphicon glyphicon-folder-open">
-                              <span class="glyphicon glyphicon-bookmark">
-                        </div>
-                        <div class="group2 col-sm-6 col-md-6">
-                            <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">Comments</a>
-                              <span class="glyphicon glyphicon-time" id = "post-time"></span> October 9, 2017 9:00 PM
-                        </div>
-                    </div>
-
-                    <hr>
-                    <p class="lead"></p>
-
-                    <p>...</p>
-
-                    <hr>
-
-                </article>
-            </article>
-
-            <!-- pager -->
-            <ul class="pager">
-                <li class="previous">
-                    <a href="#">← Older</a>
-                </li>
-                <li class="next">
-                    <a href="#">Newer →</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <!-- TODO: Sidebar -->
-        </div>
+        </form>
     </div>
-</div>
+
 
         <script src = "https://code.jquery.com/jquery-3.2.1.min.js"</script>
 <!-- Latest compiled and minified JavaScript -->
