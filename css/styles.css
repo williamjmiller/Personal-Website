@@ -2,19 +2,20 @@
 ------------------------------*/
 .navbar-header .navbar-brand {
   color: white;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Reenie Beanie', cursive;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 45px;
 }
 #lower-brand {
   color: white;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Over the Rainbow', cursive;
   font-size: 15px;
   padding-top: 25px;
 }
 #my-navbar {
   background: #2E4057;
   padding: 15px;
+  float: 10px;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: white;
@@ -36,6 +37,7 @@
 }
 .jumbotron {
   margin: 0 auto;
+  background-color: white;
 }
 .blog-title {
   font-family: 'Varela Round', sans-serif;
@@ -46,40 +48,74 @@
 }
 /* Images
 ------------------------------*/
-img {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom:20px;
-}
 
-img:hover {
-  filter: none; /* IE6-9 */
-  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 50px;
+  }
+
+ img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
+  }
 
 }
 /* Body
 ------------------------------*/
 body {
-  background-color: #CEE7E6;
+  background-color: white;
 }
 #my-photos {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container>h1 {
   font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.container>p{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 17.5px;
+}
+.container>h2 {
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
 }
-.container>h2,li {
+
+/* collabsible button */
+.collapsible {
+  background-color: #DFE0E2;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 30%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-weight: 700;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
 }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #eee;
+}
+
+.content>p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 17.5px;
+}
+
 #header-container {
   float: inherit;
-  margin-top: 30px;
-  margin-bottom: -40px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+
 }
 #blog-header {
   float: inherit;
@@ -133,4 +169,91 @@ body {
 .well>h4 {
   font-family: 'varela Round', sans-serif;
   font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #2E4057;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #2E4057;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
