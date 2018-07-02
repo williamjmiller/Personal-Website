@@ -17,7 +17,7 @@
   font-size: 15px;
   padding-top: 25px;
 }
-#my-navbar {
+.navbar-inverse {
   background: #2E4057;
   padding: 15px;
   float: 10px;
@@ -98,7 +98,7 @@ body {
   cursor: pointer;
   padding: 10px;
   margin-bottom: 15px;
-  width: 45%;
+  width: 200px;
   border: none;
   text-align: center;
   outline: none;
@@ -183,7 +183,7 @@ body {
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.container-fluid {
   position: relative;
 }
 

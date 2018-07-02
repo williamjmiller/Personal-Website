@@ -20,7 +20,9 @@
     </head>
       <body>
 <!-- Navbar -->
-          <nav class = "navbar navbar-inverse navbar-fixed-top" role = "navigation" id = "my-navbar">
+        <div class="navbar-wrapper">
+
+          <nav class = "navbar navbar-inverse navbar-fixed-top">
             <div class = "container">
               <div class = "navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
@@ -32,21 +34,24 @@
 
                 <a class = "navbar-brand" href = "index.html">Will Miller</a>
               </div>
-              <div class = "collapse navbar-collapse" id = "myNavbar">
+              <div class="navbar-collapse collapse" id="myNavbar">
                 <ul class = "nav navbar-nav navbar-right">
                   <li><a href = "https://github.com/williamjmiller" target="_blank">Projects</a></li>
                   <li><a href = "documents/Resume.pdf" target = "_blank">Resume</a></li>
                   <li><a href = "#bottom">Contact Me</a></li>
-                  <input type = "button" class="btn btn-info navbar-btn" value = "Thoughts" onclick = "relocate_blog()" id = "blog-button">
+                  <li><input type = "button" class="btn btn-info navbar-btn" value = "Thoughts" onclick = "relocate_blog()" id = "blog-button">
                     <script>
                     function relocate_blog() {
                       location.href = "blog.html ";
                     }
                     </script>
+                  </li>
                 </ul>
               </div>
             </div><!--End Container -->
           </nav><!-- End Navbar -->
+
+        </div>
 
           <!-- Jumbotron -->
           <div class = "jumbotron text-center">
@@ -155,9 +160,11 @@
 
         <script src = "script/script.js"</script>
         <script src = "https://code.jquery.com/jquery-3.2.1.min.js"</script>
-<!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
